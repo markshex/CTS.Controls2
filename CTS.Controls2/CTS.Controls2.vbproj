@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF47E8BC-6E56-415B-99E5-F268546DDD6B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>CTS.Controls2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CTS.Controls2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CTS.Controls2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CTS, Version=1.12.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\CTSCore\CTS\v1.14.1.2\CTS.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Controls">
+      <HintPath>..\..\..\..\..\..\CTSCore\CTS.Controls\v1.14.1.2\CTS.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom Controls\CT2Field\CT2Field.designer.vb">
+      <DependentUpon>CT2Field.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CT2Field\CT2Field.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CT2DateTime\CT2DateTime.designer.vb">
+      <DependentUpon>CT2DateTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CT2DateTime\CT2DateTime.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CT2Field\CT2Input.Designer.vb">
+      <DependentUpon>CT2Input.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CT2Field\CT2Input.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\CT2Grid.designer.vb">
+      <DependentUpon>CT2Grid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\CT2Grid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridColumn.Designer.vb">
+      <DependentUpon>ucGridColumn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridColumn.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridHeader.Designer.vb">
+      <DependentUpon>ucGridHeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridHeader.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucStyleCopy.Designer.vb">
+      <DependentUpon>ucStyleCopy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucStyleCopy.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\CalDay.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\Calendar.Designer.vb">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\Calendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\CT2Cards.Designer.vb">
+      <DependentUpon>CT2Cards.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\CT2Cards.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Objects\DataGridViewCT2.designer.vb">
+      <DependentUpon>DataGridViewCT2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Objects\DataGridViewCT2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\Handlers\GridHandler.vb" />
+    <Compile Include="Custom Controls\CTSGrid2\Handlers\GridModels.vb" />
+    <Compile Include="Custom Controls\CTSGrid2\Handlers\GridSQL.vb" />
+    <Compile Include="Custom Controls\CTSGrid2\Handlers\modGrid.vb" />
+    <Compile Include="Custom Objects\RadioButtonList.Designer.vb">
+      <DependentUpon>RadioButtonList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Objects\RadioButtonList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Objects\RadioButtonsCT2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Objects\TextBoxCT2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Objects\ToolStripCTS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Custom Objects\CheckBoxCT2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\ColorEntry.Designer.vb">
+      <DependentUpon>ColorEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\ColorEntry.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Objects\ComboBoxCTS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\ImageSelector.Designer.vb">
+      <DependentUpon>ImageSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\ImageSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CT2Dialog.designer.vb">
+      <DependentUpon>CT2Dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CT2Dialog.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\ColorSelector.Designer.vb">
+      <DependentUpon>ColorSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\ColorSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Objects\PopupCT2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Objects\TabControlCTS2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucDynamicStyleList.Designer.vb">
+      <DependentUpon>ucDynamicStyleList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucDynamicStyleList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridColumns.Designer.vb">
+      <DependentUpon>ucGridColumns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridColumns.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucStyle.Designer.vb">
+      <DependentUpon>ucStyle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucStyle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridFunction.Designer.vb">
+      <DependentUpon>ucGridFunction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridFunction.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucRowOption.Designer.vb">
+      <DependentUpon>ucRowOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucRowOption.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucSettingTab.Designer.vb">
+      <DependentUpon>ucSettingTab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucSettingTab.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucSQLFormatting.Designer.vb">
+      <DependentUpon>ucSQLFormatting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ucSQLFormatting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CTSGrid2\GridSupportControls\ToolStripEntryCTS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\ucModelEdit.Designer.vb">
+      <DependentUpon>ucModelEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\_SupportingControls\ucModelEdit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Custom Controls\CT2Field\CT2Field.resx">
+      <DependentUpon>CT2Field.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CT2DateTime\CT2DateTime.resx">
+      <DependentUpon>CT2DateTime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CT2Field\CT2Input.resx">
+      <DependentUpon>CT2Input.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CTSGrid2\CT2Grid.resx">
+      <DependentUpon>CT2Grid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridColumn.resx">
+      <DependentUpon>ucGridColumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridHeader.resx">
+      <DependentUpon>ucGridHeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CTSGrid2\GridSupportControls\ucStyleCopy.resx">
+      <DependentUpon>ucStyleCopy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\_SupportingControls\CalDay.resx">
+      <DependentUpon>CalDay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\_SupportingControls\Calendar.resx">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\_SupportingControls\CT2Cards.resx">
+      <DependentUpon>CT2Cards.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Objects\RadioButtonList.resx">
+      <DependentUpon>RadioButtonList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\_SupportingControls\ColorEntry.resx">
+      <DependentUpon>ColorEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\_SupportingControls\ImageSelector.resx">
+      <DependentUpon>ImageSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CT2Dialog.resx">
+      <DependentUpon>CT2Dialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\_SupportingControls\ColorSelector.resx">
+      <DependentUpon>ColorSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CTSGrid2\GridSupportControls\ucDynamicStyleList.resx">
+      <DependentUpon>ucDynamicStyleList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridColumns.resx">
+      <DependentUpon>ucGridColumns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CTSGrid2\GridSupportControls\ucStyle.resx">
+      <DependentUpon>ucStyle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CTSGrid2\GridSupportControls\ucGridFunction.resx">
+      <DependentUpon>ucGridFunction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CTSGrid2\GridSupportControls\ucRowOption.resx">
+      <DependentUpon>ucRowOption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CTSGrid2\GridSupportControls\ucSettingTab.resx">
+      <DependentUpon>ucSettingTab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CTSGrid2\GridSupportControls\ucSQLFormatting.resx">
+      <DependentUpon>ucSQLFormatting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\_SupportingControls\ucModelEdit.resx">
+      <DependentUpon>ucModelEdit.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uparrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greengradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greengradientdark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reddelete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limedogear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonBlue12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonRed12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonYellow12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonGreen12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ComboList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradientblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-shield-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
